@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.ccrama.slidewear.SlideActivity"
+    tools:deviceIds="wear_square">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4c4c4c"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ANDROID"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/relativeLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.wearable.view.CardFrame
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:fontFamily="sans-serif-light"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="HTC 10 Megathread"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-light"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="22h - QaandAndroid - self"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/downvoteBtn"
+                            android:src="@drawable/ic_action_downvote"
+                            android:background="#ffffff"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/upvoteBtn"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/upvoteBtn"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/ic_action_upvote"
+                            android:background="#ffffff" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/saveBtn"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="#ffffff"
+                            android:src="@drawable/ic_action_not_saved" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.wearable.view.CardFrame>
+
+            <android.support.wearable.view.CardFrame
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:fontFamily="sans-serif-light"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Goals in Google Calendar"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-light"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="13h - farmerbb - self"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/downvoteBtn2"
+                            android:src="@drawable/ic_action_downvote"
+                            android:background="#ffffff"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/upvoteBtn2"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/upvoteBtn2"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/ic_action_upvote"
+                            android:background="#ffffff" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/saveBtn2"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="#ffffff"
+                            android:src="@drawable/ic_action_not_saved" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.wearable.view.CardFrame>
+
+            <android.support.wearable.view.CardFrame
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:fontFamily="sans-serif-light"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Android NDK now supports Swift!"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-light"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="6h - mrBIMC - self"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/downvoteBtn3"
+                            android:src="@drawable/ic_action_downvote"
+                            android:background="#ffffff"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/upvoteBtn3"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/upvoteBtn3"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/ic_action_upvote"
+                            android:background="#ffffff" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/saveBtn3"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="#ffffff"
+                            android:src="@drawable/ic_action_not_saved" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.wearable.view.CardFrame>
+
+            <android.support.wearable.view.CardFrame
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:fontFamily="sans-serif-light"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Slide to support Android Wear!"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-light"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="1h - konrad-iturbe - self"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/downvoteBtn4"
+                            android:src="@drawable/ic_action_downvote"
+                            android:background="#ffffff"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/upvoteBtn4"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/upvoteBtn4"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/ic_action_upvote"
+                            android:background="#ffffff" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/saveBtn4"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="#ffffff"
+                            android:src="@drawable/ic_action_not_saved" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.wearable.view.CardFrame>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
